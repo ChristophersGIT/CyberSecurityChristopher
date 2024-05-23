@@ -2278,7 +2278,7 @@ input, select, textarea {
 
 
 /* XXXLarge */
-	@media screen and (min-width: 3000px) {
+	@media screen and (max-width: 3000px) {
 		/* Basic */
 		body, input, textarea, select {
 			font-size: 18pt; /* Example font size */
@@ -2288,7 +2288,7 @@ input, select, textarea {
 
 /* XLarge */
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
     /* Basic */
     body, input, textarea, select {
         font-size: 15pt; /* Example font size */
@@ -2311,6 +2311,30 @@ input, select, textarea {
 	}
 }
 
+@media screen and (min-width: 1281px) {
+    /* Styles to center content on screens larger than 1280px */
+    .container {
+        width: calc(100% - 80px);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
 
 /* Large */
 
