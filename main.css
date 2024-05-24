@@ -108,7 +108,7 @@ input, select, textarea {
 	.heading-container {
 		display: flex;
 		flex-direction: column;
-		gap: 30px; /* Adjust the gap value as needed */
+		gap: 1px; /* Adjust the gap value as needed */
 	  }
 
 	/* Title heading */
@@ -144,7 +144,7 @@ input, select, textarea {
 		margin-top: 25px;
 		font-weight: bold; /* Make the text bold */
 		font-weight: 700;
-		color: #4547c2;
+		color: #10ff24;
 		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 		font-size: 3em;
 		letter-spacing: 13px;
@@ -222,7 +222,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -239,7 +239,7 @@ input, select, textarea {
     margin: 0 auto;
     max-width: 100%;
     width: 70em;
-    padding-top: 1px; /* Adjust this value to move the container content higher */
+    padding-top: 0px; /* Adjust this value to move the container content higher */
 }
 
 		@media screen and (max-width: 1920px) {
@@ -1513,7 +1513,7 @@ input, select, textarea {
 /* Main Logo */
 
 	img {
-		width: 200px;
+		width: 300px;
 		height: auto; /* Maintain aspect ratio */
   	}
 /* Image */
@@ -1955,10 +1955,11 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #4547c2;
+			color: #33ff00;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			padding-top: 4rem;
 		}
 
 			#header h1 a {
@@ -2283,6 +2284,7 @@ input, select, textarea {
 		body, input, textarea, select {
 			font-size: 18pt; /* Example font size */
 		}
+
 	}
 
 
@@ -2833,7 +2835,39 @@ input, select, textarea {
 					text-align: center;
 				}
 			
+				        /* Custom CSS styles for the new container and heading */
+						.new-container {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							height: 100%;
+							padding-top: 0rem;
+							padding: 0rem;
+						}
+						.new-heading {
+							color: #eee;
+							font-size: 5rem;
+							font-weight: 300;
+							text-transform: uppercase;
+						}
 		
 	}
 
-	
+	@media screen and (min-width: 737px) and (max-width: 824px) {
+		#header h1 {
+			letter-spacing: 13px;
+			padding-top: 4rem;
+			line-height: 1.1; /* Adjust this value to increase or decrease line spacing */
+		}
+	}
+
+	@media screen and (min-width: 1921px) {
+
+
+		#header p {
+
+			font-size: 2em;
+			line-height: 1.1; /* Adjust this value to increase or decrease line spacing */
+
+		}
+	}
