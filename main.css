@@ -147,7 +147,7 @@ input, select, textarea {
 		font-weight: 700;
 		color: #10ff24;
 		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-		font-size: 3em;
+		font-size: 1.2em;
 		letter-spacing: 13px;
 	}
 	
@@ -1655,6 +1655,67 @@ input, select, textarea {
 	/* other styles */
 }
 
+
+/* Main Logo Image  */
+
+.mainLogo-image {
+	-moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	display: inline-block;
+	border: solid 6px #000000 !important;
+	box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+	text-align: center; /* Center the image within the container */
+}
+
+.mainLogo-image:hover {
+	opacity: 0.9;
+}
+
+.mainLogo-image img {
+	display: block;
+	max-width: 100%; /* Ensure the image does not exceed the container width */
+	height: auto; /* Maintain aspect ratio */
+	margin: 0 auto; /* Center the image */
+}
+
+.mainLogo-image.fit {
+	display: block;
+	width: 100%; /* Make the container take full width */
+}
+
+.mainLogo-image.featured {
+	display: block;
+	width: 100%; /* Make the container take full width */
+	margin: 0 0 3.5em 0;
+}
+
+.mainLogo-image.left {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	position: relative;
+	top: 0.5em;
+}
+
+.mainLogo-image.centered {
+	display: block;
+	margin: 0 auto 2em auto; /* Center the container */
+	width: 50%; /* Control the width as a percentage */
+	text-align: center; /* Ensure content inside is centered */
+}
+
+.mainLogo-image.centered img {
+	margin: 0 auto;
+	width: 100%; /* Ensure the image fills the container */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.mainLogo-image {
+	width: 40%;
+	/* other styles */
+}
+
 /* List */
 
 	ul {
@@ -2093,7 +2154,7 @@ input, select, textarea {
 			font-weight: 700;
 			color: #33ff00;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
+			font-size: 1.2em;
 			letter-spacing: 13px;
 			padding-top: 4rem;
 		}
@@ -2825,10 +2886,25 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
+
+		.ui-btn {
+			--btn-default-bg: #370aff;
+			--btn-padding: 15px 20px;
+			--font-size: 16px;
+		  }
+
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 9pt;
+				font-size: 7pt;
+			}
+
+			.heading-container {
+				margin-top: 0;
+			}
+			
+			.mainlogo {
+				margin-bottom: 0;
 			}
 
 			h2 {
@@ -3029,12 +3105,16 @@ input, select, textarea {
 						}
 						.new-heading {
 							color: #eee;
-							font-size: 5rem;
+							font-size: 2.1rem;
 							font-weight: 300;
 							text-transform: uppercase;
 						}
 		
 	}
+
+
+	
+
 
 	@media screen and (min-width: 737px) and (max-width: 824px) {
 		#header h1 {
@@ -3074,7 +3154,7 @@ input, select, textarea {
 	/* button settings  */
 	.ui-btn {
 		--btn-default-bg: #33FF00;
-		--btn-padding: 15px 20px;
+		--btn-padding: 5px 5px;
 		--btn-hover-bg: rgb(51, 51, 51);
 		--btn-transition: .3s;
 		--btn-letter-spacing: .1rem;
@@ -3083,7 +3163,7 @@ input, select, textarea {
 		--btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
 		--hover-btn-color: #000000;
 		--default-btn-color: #728b00;
-		--font-size: 16px;
+		--font-size: 5px;
 		/* 👆 this field should not be empty */
 		font-family: 'Arvo';
 		font-weight: 700;
@@ -3097,7 +3177,7 @@ input, select, textarea {
 	  
 	  .ui-btn {
 		box-sizing: border-box;
-		padding: 15px 30px;
+		padding: 5px 5px;
     	margin-top: 20px;
 		display: flex;
 		align-items: center;
