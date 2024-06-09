@@ -1539,121 +1539,6 @@ input, select, textarea {
 		width: 300px;
 		height: auto; /* Maintain aspect ratio */
   	}
-/* Image */
-
-.image {
-    -moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-    -webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-    -ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-    transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-    display: inline-block;
-    border: solid 6px #000000 !important;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    text-align: center; /* Center the image within the container */
-}
-
-.image:hover {
-    opacity: 0.9;
-}
-
-.image img {
-    display: block;
-    max-width: 100%; /* Ensure the image does not exceed the container width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the image */
-}
-
-.image.fit {
-    display: block;
-    width: 100%; /* Make the container take full width */
-}
-
-.image.featured {
-    display: block;
-    width: 100%; /* Make the container take full width */
-    margin: 0 0 3.5em 0;
-}
-
-.image.left {
-    float: left;
-    margin: 0 1.5em 1.5em 0;
-    position: relative;
-    top: 0.5em;
-}
-
-.image.centered {
-    display: block;
-    margin: 0 auto 2em auto; /* Center the container */
-    width: 50%; /* Control the width as a percentage */
-    text-align: center; /* Ensure content inside is centered */
-}
-
-.image.centered img {
-    margin: 0 auto;
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-/* Custom Image  */
-
-.custom-image {
-	-moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-	-webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-	-ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
-	display: inline-block;
-	border: solid 6px #000000 !important;
-	box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-	text-align: center; /* Center the image within the container */
-}
-
-.custom-image:hover {
-	opacity: 0.9;
-}
-
-.custom-image img {
-	display: block;
-	max-width: 100%; /* Ensure the image does not exceed the container width */
-	height: auto; /* Maintain aspect ratio */
-	margin: 0 auto; /* Center the image */
-}
-
-.custom-image.fit {
-	display: block;
-	width: 100%; /* Make the container take full width */
-}
-
-.custom-image.featured {
-	display: block;
-	width: 100%; /* Make the container take full width */
-	margin: 0 0 3.5em 0;
-}
-
-.custom-image.left {
-	float: left;
-	margin: 0 1.5em 1.5em 0;
-	position: relative;
-	top: 0.5em;
-}
-
-.custom-image.centered {
-	display: block;
-	margin: 0 auto 2em auto; /* Center the container */
-	width: 50%; /* Control the width as a percentage */
-	text-align: center; /* Ensure content inside is centered */
-}
-
-.custom-image.centered img {
-	margin: 0 auto;
-	width: 100%; /* Ensure the image fills the container */
-	height: auto; /* Maintain aspect ratio */
-}
-
-.custom-image {
-	width: 40%;
-	/* other styles */
-}
 
 
 /* Lower Article */
@@ -1716,7 +1601,182 @@ input, select, textarea {
 	/* other styles */
 }
 
+/* Article One Image*/
+.articleone img {
+	-moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	display: inline-block;
+	border: solid 6px #000000 !important;
+	box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+	text-align: center; /* Center the image within the container */
+}
 
+.articleone img:hover {
+	opacity: 0.9;
+}
+
+.articleone img {
+	display: block;
+	max-width: 100%; /* Ensure the image does not exceed the container width */
+	height: auto; /* Maintain aspect ratio */
+	margin: 0 auto; /* Center the image */
+}
+
+.articleone.fit img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+}
+
+.articleone.featured img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+	margin: 0 0 3.5em 0;
+}
+
+.articleone.left img {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	position: relative;
+	top: 0.5em;
+}
+
+.articleone.centered img {
+	display: block;
+	margin: 0 auto 2em auto; /* Center the container */
+	width: 50%; /* Control the width as a percentage */
+	text-align: center; /* Ensure content inside is centered */
+}
+
+.articleone.centered img {
+	margin: 0 auto;
+	width: 100%; /* Ensure the image fills the container */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.articleone img {
+	width: 50%;
+	/* other styles */
+}
+
+/* Article two image */
+.articletwo img {
+	-moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	display: inline-block;
+	border: solid 6px #000000 !important;
+	box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+	text-align: center; /* Center the image within the container */
+}
+
+.articletwo img:hover {
+	opacity: 0.9;
+}
+
+.articletwo img {
+	display: block;
+	max-width: 100%; /* Ensure the image does not exceed the container width */
+	height: auto; /* Maintain aspect ratio */
+	margin: 0 auto; /* Center the image */
+}
+
+.articletwo.fit img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+}
+
+.articletwo.featured img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+	margin: 0 0 3.5em 0;
+}
+
+.articletwo.left img {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	position: relative;
+	top: 0.5em;
+}
+
+.articletwo.centered img {
+	display: block;
+	margin: 0 auto 2em auto; /* Center the container */
+	width: 50%; /* Control the width as a percentage */
+	text-align: center; /* Ensure content inside is centered */
+}
+
+.articletwo.centered img {
+	margin: 0 auto;
+	width: 100%; /* Ensure the image fills the container */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.articletwo img {
+	width: 70%;
+	/* other styles */
+}
+
+/* Article three image */
+.articlethree img {
+	-moz-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+	display: inline-block;
+	border: solid 6px #000000 !important;
+	box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+	text-align: center; /* Center the image within the container */
+}
+
+.articlethree img:hover {
+	opacity: 0.9;
+}
+
+.articlethree img {
+	display: block;
+	max-width: 100%; /* Ensure the image does not exceed the container width */
+	height: auto; /* Maintain aspect ratio */
+	margin: 0 auto; /* Center the image */
+}
+
+.articlethree.fit img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+}
+
+.articlethree.featured img {
+	display: block;
+	width: 100%; /* Make the container take full width */
+	margin: 0 0 3.5em 0;
+}
+
+.articlethree.left img {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	position: relative;
+	top: 0.5em;
+}
+
+.articlethree.centered img {
+	display: block;
+	margin: 0 auto 2em auto; /* Center the container */
+	width: 50%; /* Control the width as a percentage */
+	text-align: center; /* Ensure content inside is centered */
+}
+
+.articlethree.centered img {
+	margin: 0 auto;
+	width: 100%; /* Ensure the image fills the container */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.articlethree img {
+	width: 30%;
+	/* other styles */
+}
 
 .new-button {
     /* Basic button styling */
@@ -2195,9 +2255,6 @@ input, select, textarea {
 
 /* Page Wrapper */
 
-	#page-wrapper > section {
-		margin-bottom: 0;
-	}
 
 /* Header */
 /* header background color */
@@ -2223,7 +2280,7 @@ input, select, textarea {
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 1.2em;
 			letter-spacing: 13px;
-			padding-top: 4rem;
+			
 		}
 
 			#header h1 a {
@@ -2413,7 +2470,11 @@ input, select, textarea {
 		text-transform: uppercase;
 		background: url("../../images/banner.jpg");
 		background-size: cover;
-		padding: 10em 0;
+	}
+
+	#banner {
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 
 		#banner p {
@@ -2488,8 +2549,7 @@ input, select, textarea {
 		#content > article:first-child {
 			border-top: 0;
 			box-shadow: none;
-			margin: 5em 0 0 0;
-			padding: 5em 0 0 0;
+			
 		}
 
 /* Sidebar */
@@ -3099,7 +3159,7 @@ input, select, textarea {
 			#content > section,
 			#content > article {
 				margin: 3em 0 0 0;
-				padding: 3em 0 0 0;
+
 			}
 
 		/* Sidebar */
